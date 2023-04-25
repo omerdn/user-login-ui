@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <div class="container_upper">
+            <img src="img/usericon.png" width="30px"> <span>Sign in</span>
+        </div>
+        <div class="content">
+            <form name="form" required></form>
+            <span id="user">Username</span>
+            <input type="text" id="userfull" placeholder="Enter here" required><img id="username_image" src=" " width="15px">
+            <span id="pass">Password</span>
+            <input type="password" id="passfull" placeholder="*******" required><img id="password_image" src=" " width="15px">
+            <div id="bottom_area">
+                <button class="submitbutton button_unusable" type="submit">Login</button>
+                <button class="forgotpass" type="submit">Forgot Password?</button>
+            </div>
+            </form>
+            <table style="width:100%; text-align: left; margin-top: 10px;">
+                <tr>
+                  <th width="10%" style="text-align: right;"><img id="username_image_down" src="img/deny.png" width="10px" style="margin-right: 5px;"></th>
+                  <th width="90%"><span style="font-size: 10px; position: relative; bottom: 2px;">Username must be between 6 and 20 characters</span></th>
+                </tr>
+                <tr>
+                  <td width="10%" style="text-align: right;"><img id="password_image_down" src="img/deny.png" width="10px" style="margin-right: 5px;"></td>
+                  <td width="90%"><span style="font-size: 10px; position: relative; bottom: 2px;">Password must contain at least one number, one letter, cannot contain Turkish characters and be between 6 and 24 characters</span></td>
+                </tr>
+              </table>
+   </div>
+
+
+        <div class="forgotPassword_area">
+            <form name="form" required></form>
+            <span id="user">Do not remember your password?</span>
+            <input type="text" id="passRequest" placeholder="Enter e-mail address here" required><img id="passReq_image" src=" " width="15px">
+            <div id="bottom_area">
+                <button class="passRequest button_unusable" type="submit">Submit</button>
+                <button class="backlogin">Go back to Login</button>
+            </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
